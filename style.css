@@ -1,3 +1,14 @@
 html {
-    background-color: orange
+    background-color: rgb(164, 14, 194);
+}
+
+.Apresentando_Lain {
+    background-color: rgb(217, 82, 230) ;
+}
+
+.Apresentando_Lain img {
+    width: 350px;
+    height: 700px;
+    margin: 10px;
+    border: solid 2px;
 }
