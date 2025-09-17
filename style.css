@@ -1,14 +1,27 @@
 html {
-    background-color: rgb(14, 62, 194);
+    background-color: rgb(104, 150, 202)
 }
 
 .Apresentando_Lain {
-    background-color: rgb(68, 168, 214) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(117, 133, 141);
+    padding: 40px;
+    height: 100vh; 
+    box-sizing: border-box;
 }
 
 .Apresentando_Lain img {
     width: 350px;
     height: 700px;
-    margin: 10px;
-    border: solid 5px;
+    border: solid 5px white;
+}
+
+.Apresentando_Lain h3{
+    width: 50%; 
+    color: white; 
+    font-family: Arial, sans-serif;
+    font-size: 18px; 
 }
