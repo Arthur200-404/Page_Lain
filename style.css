@@ -4,54 +4,57 @@ html {
 
 
 
-.Apresentando_Lain {
+.apresentando-Lain {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: rgb(117, 133, 141);
     padding: 40px;
     min-height: 100vh;
     flex-wrap: wrap;
     box-sizing: border-box;
+    border-radius: 2%;
 }
 
-.Apresentando_Lain img {
+.apresentando-Lain img {
     width: 350px;
     height: 700px;
     border: solid 5px white;
+    border-radius: 2%;
 }
 
-.Apresentando_Lain p {
+.apresentando-Lain p {
     width: 50%;
     color: white;
     font-family: Arial, sans-serif;
     font-size: 18px;
 }
 
-.imagem_representação {
- display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.imagem-representacao {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
     padding: 20px;
+    justify-items: center;
 }
-.imagem_representação .retangulo-menor {
-    width: 300px;
+
+.imagem-representacao img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.retangulo-menor {
     height: 200px;
     object-fit: cover;
-    margin: 10px;
 }
 
-.imagem_representação .quadrado {
-    width: 300px;
+.quadrado {
     height: 300px;
-    object-fit: cover;
-    margin: 10px;
 }
 
-.imagem_representação .retangulo-maior {
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    margin: 10px;
+.retangulo-maior {
+    height: 400px;
 }
