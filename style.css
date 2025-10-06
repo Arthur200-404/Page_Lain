@@ -2,18 +2,33 @@ html {
     background-color: rgb(104, 150, 202);
 }
 
-
+.titulo{
+    color: white;
+    max-width: 500px;
+}
 
 .apresentando-Lain {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* O texto vai ficar à esquerda */
     align-items: center;
     background-color: rgb(117, 133, 141);
     padding: 40px;
     min-height: 100vh;
-    flex-wrap: wrap;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 2%;
+    position: relative; /* Necessário para o posicionamento absoluto da imagem */
+}
+
+.apresentação {
+    flex: 1; /* O texto ocupa o restante do espaço */
+    color: white;
+    max-width: 500px;
+}
+
+.imagem-apresentacao {
+    position: absolute; /* A imagem vai ficar fixada à direita */
+    right: 20px; 
 }
 
 .apresentando-Lain img {
@@ -21,13 +36,6 @@ html {
     height: 700px;
     border: solid 5px white;
     border-radius: 2%;
-}
-
-.apresentando-Lain p {
-    width: 50%;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
 }
 
 .imagem-representacao {
@@ -44,6 +52,7 @@ html {
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+    border: solid 3px black;
 }
 
 .retangulo-menor {
@@ -53,8 +62,10 @@ html {
 
 .quadrado {
     height: 300px;
+    object-fit: cover;
 }
 
 .retangulo-maior {
     height: 400px;
+    object-fit: cover;
 }
